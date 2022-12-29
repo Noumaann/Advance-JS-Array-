@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+    //Array
+
+       /* var a=[10,20,30,40,50];
+            
+        document.write("<ul>");
+
+        for(b=0; b<5; b++){
+            document.write("<li>"+a[b]+"</li>");
+        }
+        document.write("</ul>");*/
+
+
+
+       /* var ary=new Array(3);
+
+            //ary[0]=10;
+            //ary[1]="Nomi";
+            //ary[3]="Hey";
+
+        for(var a=0; a<3; a++){
+            ary[a]= prompt("enter vale: ");
+            }
+
+
+
+        for(var a=0; a<3; a++){
+            document.write(ary[a]+"<br>");
+        }*/
+
+
+
+
+
+    //MUltidimensional Array
+
+      /*  var arry=[
+        ["Abu", 27, "Male", "M.Tech"],
+        ["Nomi", 24, "Male", "Engg"],
+        ["Furqan", 23, "Male", "M-Pharma"],
+        ["Sanaya", 20, "Female", "Engg"],
+        ];
+
+        //document.write(arry[1][0]);
+
+        document.write("<table border='1px' cellspacing='0'>")
+
+       for(var a=0; a<arry.length; a++){
+        document.write("<tr>");
+
+           for(var b=0; b<arry[a].length; b++){
+           document.write("<td>"+arry[a][b] + "</td> ");
+        }
+        document.write("/<tr>");
+    }
+        document.write("</table>")*/
+
+
+
+
+
+// Modify and Remove Array Element
+    
+  /*  var a=["Himan", 25, "Male", "Capg"];
+    document.write(a+"<br>");
+
+    a[0]="Himanshu";
+    document.write(a+"<br>");
+
+    delete a[3];
+    document.write(a);*/
+
+
+
+
+//sort(), reverse()
+
+   /* var a=["Nomi", "Irfan", "Hafeez", "Abu", "Furqan" ];
+        document.write(a+"<br><br>");
+
+       a.sort()
+       document.write(a+"<br><br>");
+
+       a.reverse()
+       document.write(a+"<br>");*/
+
+
+
+
+//Push(),Pop()
+
+   /* var a=["Nomi", "Irfan", "Hafeez", "Abu", "Furqan" ];    
+        document.write(a+"<br><br>");
+
+        a.pop()
+        document.write(a+"<br><br>");
+
+        a.push("Himanshu")
+        document.write(a+"<br><br>");*/
+
+
+
+
+
+//Unshift(),Shift()
+
+   /* var a=["Nomi", "Irfan", "Hafeez", "Abu", "Furqan" ]; 
+        document.write(a+"<br><br>");
+
+        a.shift()
+        document.write(a+"<br><br>");
+
+        a.unshift("Rehan")
+        document.write(a+"<br><br>");*/
+
+
+
+
+
+
+//Concat(), Join()  Function
+
+  /*  var a=["Nomi", "Irfan", "Abu", "Furqan" ];
+    var b=["Alfan", "Rehman"]; 
+
+    var c=a.concat(b);
+           document.write(c+"<br><br>");
+
+           var d=c.join("-");
+           document.write(d+"<br><br>")*/
+
+
+
+
+//Slice(),Splice()
+
+   /* var a=["Aman", "Rehman", "Karan", "Sanjay"];
+        document.write(a+"<br><br>");
+    
+    var b=a.slice(1,3)
+        document.write(b+"<br><br>");
+
+        
+    var a=["Aman", "Rehman", "Karan", "Farhan"];
+        document.write(a+"<br><br>");
+
+        a.splice(2,2,"Ali")
+        document.write(a)*/
+   
+
+
+
+
+//Array.isArray()
+
+   // var a=["Ali", "Aman", "Azeez"];
+    /*  var a=10;
+        document.write(a+"<br><br>");
+
+     if(Array.isArray(a)){
+     document.write("this is an array");
+     }
+     else{
+        document.write("this is not an array"); 
+     }
+*/
+
+
+
+
+//Array-indexOf()
+
+   /*/  var a=["Sanaulla", "Mujeeb", "Usman", "Fayaz", "Mujeeb"];
+        document.write(a+"<br><br>");
+
+        var b=a.indexOf("Mujeeb", 2);
+        document.write(b+"<br><br>");
+
+
+
+//LastIndexOf()
+
+    var b= a.lastIndexOf("Mujeeb",2 );
+        document.write(b+"<br><br>");*/
+
+
+
+
+        
+// some(), every()
+
+    var a=[10,20,13,40];
+        document.write(a+"<br><br>");
+
+    var b = a.some(check);
+        document.write(b+"<br><br>");
+
+        function check(a){
+        return  a >= 18;
+        }
+
+
+//every()
+
+        
+    var a=[10,20,13,40];
+        document.write(a+"<br><br>");
+
+    var b = a.every(check);
+        document.write(b+"<br><br>");
+
+        function check(a){
+        return  a >= 18;
+        }
+
+
+
+//Find(), findIndex()
+
+  /*  var a=[10,20,13,40];
+        document.write(a+"<br><br>");
+
+    var b=a.find(check);
+        document.write(b+"<br><br>");
+
+        function check(a){
+            return a >=18;
+        }
+
+
+//findIndex()
+     var a=[10,20,13,40];
+        document.write(a+"<br><br>");
+
+    var b=a.findIndex(check);
+        document.write(b+"<br><br>");
+
+        function check(a){
+            return a >=18;
+        }*/
+
+
+
+//filter()
+     /*   var age=[70,20,13,40];
+        document.write(age+"<br><br>");
+
+    var b=age.filter(check);
+        document.write(b+"<br><br>");
+
+        function check(age){
+            return a >=18;
+        }*/
+
+
+
+ // toString()
+ 
+ 
+   /* var a=["Sanaulla", "Mujeeb", "Usman", "Fayaz", "Mujeeb"];
+
+        a.toString();
+        document.write(a);*/
+
+ 
+
+
+
+
+
+//forEach()
+
+    var a=["Sanaulla", "Mujeeb", "Usman", "Fayaz", "Mujeeb"];
+            a.forEach(function (value, index)
+            {
+                document.write(index+" : "+value+"<br>");
+            })
+
+    </script>
+</body>
+</html>
